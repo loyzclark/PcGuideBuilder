@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/comparisonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARE PARTS"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- title sa taas ng image -->
+            <TextView
+                android:id="@+id/partOneImageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image text Title"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Part 1 Image -->
+            <ImageView
+                android:id="@+id/partOneImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Part 1 Image"
+                android:src="@drawable/blank_black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Part 1 Rating -->
+            <TextView
+                android:id="@+id/partOneRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Rating: 75%"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- VS Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-------------VS-------------"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- title sa taas ng image part 2-->
+            <TextView
+                android:id="@+id/partTwoImageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image text Title"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Part 2 Image -->
+            <ImageView
+                android:id="@+id/partTwoImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Part 2 Image"
+                android:src="@drawable/blank_black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Part 2 Rating -->
+            <TextView
+                android:id="@+id/partTwoRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Rating: 85%"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- Scroll down for more info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Scroll down for more information below"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/arrowDownIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Scroll down icon"
+            android:src="@drawable/baseline_arrow_downward_24" />
+
+        <!-- Features -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Features"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/rectangle_border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Part 1 Features -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="#242424"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/partOneFtextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:text="Title input 1"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partOneFeatures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part 1 Features"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:gravity="start"
+                android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Part 2 Features -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#242424"
+                android:padding="16dp"
+
+            android:layout_marginStart="4dp">
+
+            <TextView
+                android:id="@+id/partTwoFtextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:text="Title input 2"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/partTwoFeatures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part 2 Features"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:gravity="start"
+            android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- General Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Info"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/rectangle_border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <!-- Part 1 General Info -->
+
+            <!-- Part 2 General Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="#242424"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/partOneGeneralInfoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="8dp"
+                    android:text="Title input 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partOneGeneralInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="start"
+                    android:text="Part 1 Gen Info"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#242424"
+                android:padding="16dp"
+
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:id="@+id/partTwoGeneralInfoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="8dp"
+                    android:text="Title input 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partTwoGeneralInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part 2 Gen info"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:gravity="start"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Performance -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performance"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/rectangle_border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <!-- Part 1 Performance -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#242424"
+                android:padding="16dp"
+
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:id="@+id/partOnePerformanceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="8dp"
+                    android:text="Title input 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partOnePerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part 1 Performance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:gravity="start"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Part 2 Performance -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#242424"
+                android:padding="16dp"
+
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:id="@+id/partTwoPerformanceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="8dp"
+                    android:text="Title input 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partTwoPerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part 2 Performance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:gravity="start"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Compare Another"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:backgroundTint="#252525"
+            android:textColor="#ffffff"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>
