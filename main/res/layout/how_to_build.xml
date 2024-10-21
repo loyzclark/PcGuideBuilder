@@ -1,0 +1,214 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_how_to_build"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Section 1: Title with "Your PC" below -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/title_part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to Build"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="4dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:id="@+id/title_part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your PC"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.05"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Step 1: Prepare your PC case -->
+        <TextView
+            android:id="@+id/step_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Prepare your PC case"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/pc_case_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pc_case"
+            android:background="#333232"
+        android:contentDescription="PC Case" />
+
+
+        <TextView
+            android:id="@+id/step_1_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The first thing you’ll want to do is strip the case down as far as you can go. Remove every panel..."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 2: Install your fans -->
+        <TextView
+            android:id="@+id/step_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Install your fans"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/pc_fans_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pc_fan"
+            android:background="#333232"
+            android:contentDescription="PC Fans" />
+
+        <TextView
+            android:id="@+id/step_2_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next, install the fans to keep your PC cool. Make sure to orient the fans correctly to maximize airflow..."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 3: Install the motherboard -->
+        <TextView
+            android:id="@+id/step_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Install the motherboard"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/pc_motherboard"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pc_case"
+            android:background="#333232"
+
+            android:contentDescription="PC Motherboard" />
+
+        <TextView
+            android:id="@+id/step_3_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carefully install the motherboard into the case, ensuring that it aligns with the standoffs and connectors."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 4: Install your memory -->
+        <TextView
+            android:id="@+id/step_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Install your memory"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/pc_memory"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pc_case"
+            android:background="#333232"
+
+            android:contentDescription="PC Memory" />
+
+        <TextView
+            android:id="@+id/step_4_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert the memory modules into the appropriate slots on the motherboard, ensuring they are securely fastened."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 5: Install your CPU -->
+        <TextView
+            android:id="@+id/step_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Install your CPU"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/pc_cpu_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pc_case"
+            android:background="#333232"
+
+            android:contentDescription="PC CPU" />
+
+        <TextView
+            android:id="@+id/step_5_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carefully place the CPU into its socket on the motherboard, following the correct orientation."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 6: Install your storage -->
+        <TextView
+            android:id="@+id/step_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Install your storage"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/pc_storage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_6_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Install your storage drives in the appropriate bays, ensuring they are securely fastened."
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
