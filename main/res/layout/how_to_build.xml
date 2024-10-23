@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="How to Build"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:paddingBottom="4dp"
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your PC"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="#000000"
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. Prepare your PC case"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:paddingBottom="8dp" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/step_1_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The first thing you’ll want to do is strip the case down as far as you can go. Remove every panel..."
+            android:text="Begin by disassembling the case as much as possible, which typically involves removing the side panels, front panel, and sometimes even the top panel. This will give you more room to maneuver while working on the internal components. Make sure to store the screws and panels in a safe spot, like the case box, to avoid losing any parts."
             android:textSize="14sp"
             android:paddingTop="8dp"
             android:paddingBottom="16dp" />
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2. Install your fans"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:paddingBottom="8dp" />
 
@@ -94,8 +94,8 @@
             android:id="@+id/step_2_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next, install the fans to keep your PC cool. Make sure to orient the fans correctly to maximize airflow..."
             android:textSize="14sp"
+            android:text="If your case didn’t come pre-installed with fans, this is the time to mount them. Position the intake fans at the front or bottom of the case to pull cool air in, and the exhaust fans at the rear or top to expel hot air. Make sure you secure the fans tightly and connect their power cables to the correct headers on the motherboard or fan controller for optimal airflow and cooling performance."
             android:paddingTop="8dp"
             android:paddingBottom="16dp" />
 
@@ -105,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3. Install the motherboard"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:paddingBottom="8dp" />
 
@@ -113,17 +113,17 @@
             android:id="@+id/pc_motherboard"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/pc_case"
             android:background="#333232"
+            android:contentDescription="PC Motherboard"
 
-            android:contentDescription="PC Motherboard" />
+            android:src="@drawable/pc_case" />
 
         <TextView
             android:id="@+id/step_3_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Carefully install the motherboard into the case, ensuring that it aligns with the standoffs and connectors."
             android:textSize="14sp"
+            android:text="Before installing the motherboard, check that the case has the necessary standoffs pre-installed and that they align with your motherboard’s mounting holes. Carefully lower the motherboard into the case, ensuring it aligns with the I/O shield and ports on the back of the case. Once it’s in place, secure it using the appropriate screws, taking care not to over-tighten them."
             android:paddingTop="8dp"
             android:paddingBottom="16dp" />
 
@@ -133,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4. Install your memory"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:paddingBottom="8dp" />
 
@@ -150,8 +150,8 @@
             android:id="@+id/step_4_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Insert the memory modules into the appropriate slots on the motherboard, ensuring they are securely fastened."
             android:textSize="14sp"
+            android:text="Open the clips on the RAM slots, then align the notch on the RAM stick with the slot on the motherboard. Insert the memory module into the slot and press firmly until the clips on either side click into place. Repeat this process if you're installing multiple RAM sticks, ensuring they are seated in the correct channels for dual or quad-channel configuration, as specified in your motherboard’s manual."
             android:paddingTop="8dp"
             android:paddingBottom="16dp" />
 
@@ -161,7 +161,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5. Install your CPU"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:paddingBottom="8dp" />
 
@@ -178,8 +178,8 @@
             android:id="@+id/step_5_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Carefully place the CPU into its socket on the motherboard, following the correct orientation."
             android:textSize="14sp"
+            android:text="Carefully lift the CPU socket retention lever on your motherboard. Take your CPU, and without touching the pins, align the marked corner of the processor with the corresponding corner on the socket. Gently lower the CPU into the socket, ensuring it’s properly aligned, and then secure it by lowering the retention lever back into place."
             android:paddingTop="8dp"
             android:paddingBottom="16dp" />
 
@@ -189,7 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6. Install your storage"
-            android:textSize="18sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:paddingBottom="8dp" />
 
@@ -205,10 +205,230 @@
             android:id="@+id/step_6_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Install your storage drives in the appropriate bays, ensuring they are securely fastened."
             android:textSize="14sp"
+            android:text="Depending on whether you’re using an SSD, NVMe drive, or traditional HDD, the installation will vary slightly. For a 2.5-inch SSD or 3.5-inch HDD, mount the drive into the appropriate bay in your case. For an NVMe SSD, install it directly into the motherboard’s M.2 slot, and secure it with the provided screw. Connect the storage drive to the power supply and motherboard using the appropriate cables."
             android:paddingTop="8dp"
             android:paddingBottom="16dp" />
+
+        <!-- Step 7: Install your storage -->
+        <TextView
+            android:id="@+id/step_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Position and install power supply"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/power_supply"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_7_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Place the power supply unit (PSU) in its designated spot, usually at the bottom of the case. Make sure the PSU’s fan is facing downward if your case has a vent for air intake. Secure the power supply with the screws provided, and route its cables through the case, making sure to leave enough slack for proper cable management later."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 8: Connect everything to your motherboard -->
+        <TextView
+            android:id="@+id/step_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. Connect everything to your motherboard"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/connect_motherboard"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_8_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Start by connecting the 24-pin power connector from the power supply to the motherboard’s main power socket. Next, connect the 8-pin CPU power connector to the motherboard’s CPU socket, and any additional power connectors required for your GPU or other components. Don’t forget to attach the front panel connectors for power/reset buttons, USB ports, and audio jacks to the motherboard headers."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 9: Connect your power supply -->
+        <TextView
+            android:id="@+id/step_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. Connect your power supply"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/connect_powersupply"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_9_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Attach the power cables from the power supply to the various components in your build. This includes connecting the necessary power cables to your motherboard, CPU, storage drives, and any other devices like case fans or lighting. Ensure all connections are snug and properly seated to avoid any issues when powering on."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 10: Installing your graphics card -->
+        <TextView
+            android:id="@+id/step_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. Installing your graphics card"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/install_graphics"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_10_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Take your graphics card and carefully insert it into the PCIe slot on your motherboard, making sure it clicks into place. Secure the card to the case using screws to prevent it from moving. If your GPU requires additional power, connect the necessary PCIe power cables from the power supply, ensuring they are properly seated."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 11: Turn on your PC -->
+        <TextView
+            android:id="@+id/step_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. Turn on your PC"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/turn_on_pc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_11_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="With everything installed and connected, plug your PC into a power outlet, connect your monitor, keyboard, and mouse, and press the power button. If everything is connected properly, your PC should power on, and you should see the BIOS screen on your monitor. If not, double-check all connections and component installations."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 12: Clean up your cables (optional)-->
+        <TextView
+            android:id="@+id/step_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12. Clean up your cables (optional)"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/clean_cables"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_12_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="For better airflow and a tidy look, you can organize your cables using cable ties or Velcro straps. Tuck excess cables behind the motherboard tray or into unused drive bays to reduce clutter. Good cable management helps improve airflow and makes your PC look more professional"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 13: Install Windows (or the operating system of your choice)-->
+        <TextView
+            android:id="@+id/step_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13. Install Windows (or the operating system of your choice)"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/install_windows"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_13_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Insert a bootable USB or DVD with your operating system and follow the on-screen prompts to install it onto your storage drive. Make sure to choose the correct drive during installation and set up partitions if necessary. Once installed, you can download drivers and updates to ensure everything runs smoothly."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Step 14: Desktop maintenance-->
+        <TextView
+            android:id="@+id/step_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14. Desktop maintenance"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/desktop_maintenance"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#333232"
+            android:src="@drawable/pc_case"
+            android:contentDescription="PC Storage" />
+
+        <TextView
+            android:id="@+id/step_14_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Regularly maintain your PC by cleaning dust from fans, filters, and components to prevent overheating. Periodically check that cables remain secure, and ensure software is updated, including drivers and operating system patches. Good maintenance ensures your PC runs efficiently and prolongs its lifespan."
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+
+
+
 
     </LinearLayout>
 </ScrollView>
